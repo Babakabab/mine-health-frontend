@@ -5,6 +5,11 @@ const languageData = [
     name: 'English',
   },
   {
+    languageId: 'turkish',
+    locale: 'tr',
+    name: 'Turkish',
+  },
+  {
     languageId: 'chinese',
     locale: 'zh',
     name: '中国人',
