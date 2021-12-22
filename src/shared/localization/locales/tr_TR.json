@@ -2,5 +2,7 @@
   "sidebar.vehicles": "Araçlar",
   "sidebar.users": "Kullanıcıler",
   "sidebar.companies": "Firmalar",
-  "usersTable.addUser": "Kullanici Ekle"
+  "usersTable.addUser": "Kullanici Ekle",
+  "usersTable.addVehicle": "Araç Ekle",
+  "usersTable.addCompany": "Firma Ekle"
 }

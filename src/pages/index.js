@@ -4,14 +4,16 @@ import {Redirect} from 'react-router-dom';
 import Error403 from './errorPages/Error403';
 import React from 'react';
 import {errorPagesConfigs} from './errorPages';
-import {samplePagesConfigs} from './sample';
+import {samplePagesConfigs} from './mainPages';
 
+//These structures require authorization
 const authorizedStructure = {
   fallbackPath: '/signin',
   unAuthorizedComponent: <Error403 />,
   routes: [...samplePagesConfigs],
 };
 
+//These routes don't require authorization
 const unAuthorizedStructure = {
   fallbackPath: initialUrl,
   routes: authRouteConfig,

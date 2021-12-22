@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import AuthWrapper from '../AuthWrapper';
 import SigninFirebase from './SigninFirebase';
 import AppLogo from '../../../@crema/core/AppLayout/components/AppLogo';
+import SigninJwtAuth from "./SigninJwtAuth";
 
 const Signin = () => {
   return (
@@ -19,8 +20,8 @@ const Signin = () => {
             <AppLogo />
           </Box>
         </Box>
-
-        <SigninFirebase />
+        <SigninJwtAuth/>
+        {/*<SigninFirebase />*/}
       </Box>
     </AuthWrapper>
   );
