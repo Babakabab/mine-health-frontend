@@ -1,12 +1,7 @@
 import axios from 'axios';
+import {axiosInstance} from "../../../../Utils/makeRequest";
 
-const jwtAxios = axios.create({
-  baseURL: 'https://crema-mongo-api.herokuapp.com/api/', //YOUR_API_URL HERE
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
-jwtAxios.interceptors.response.use(
+axiosInstance.interceptors.response.use(
   (res) => res,
   (err) => {
     if (err.response && err.response.data.msg === 'Token is not valid') {
@@ -18,12 +13,12 @@ jwtAxios.interceptors.response.use(
 );
 export const setAuthToken = (token) => {
   if (token) {
-    jwtAxios.defaults.headers.common['Authorization'] = 'Bearer ' + token;
+    axiosInstance.defaults.headers.common['Authorization'] = 'Bearer ' + token;
     localStorage.setItem('token', token);
   } else {
-    delete jwtAxios.defaults.headers.common['Authorization'];
+    delete axiosInstance.defaults.headers.common['Authorization'];
     localStorage.removeItem('token');
   }
 };
 
-export default jwtAxios;
+export default axiosInstance;

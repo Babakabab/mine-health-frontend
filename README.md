@@ -1,3 +1,8 @@
+#Getting Started
+/src/pages/index contains the authorized(invisible to unauhtorized viewers), unauthorized, and anonymous(error pages etc).
+/src/pages/mainPages/index contains the main routes for the app.
+/src/pages/mainPages contains the main container components of the app 
+/src/pages/routesConfig is used to render the menu items
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

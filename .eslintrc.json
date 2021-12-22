@@ -1,5 +1,5 @@
 {
-  "root": true, //Specify this file as a configuration file
+  "root": false, //Specify this file as a configuration file
   "parser": "babel-eslint", //Use babel-eslint as its parser by default
   "parserOptions": {
     "ecmaVersion": 6, //Specify the ECMAScript version used

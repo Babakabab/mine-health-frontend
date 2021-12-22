@@ -227,10 +227,10 @@ const defaultConfig = {
   rtAnim: RouteTransition.NONE,
   footer: false,
   locale: {
-    languageId: 'english',
-    locale: 'en',
-    name: 'English',
-    icon: 'us',
+    languageId: 'turkish',
+    locale: 'tr',
+    name: 'Turkish',
+    icon: 'tr',
   },
   rtlLocale: ['ar'],
 };

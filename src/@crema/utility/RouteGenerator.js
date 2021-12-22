@@ -24,7 +24,6 @@ const generateRoutes = (structure) => {
     unAuthorizedStructure = {},
     userRole = authRole.user,
   } = structure || {};
-
   const dynamicRoutes = [];
 
   if (structure?.anonymousStructure) {
